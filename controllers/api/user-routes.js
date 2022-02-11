@@ -69,6 +69,10 @@ router.post('/', withAuth, (req, res) => {
         req.session.loggedIn = true;
         res.json(dbUserData);
       }))
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
 });
 
 router.post('/login', withAuth, (req, res) => {
@@ -114,7 +118,7 @@ router.put('/:id', withAuth, (req, res) => {
     }
   })
     .then(dbUserData => {
-      if (!dbUserData[0]) {
+      if (!dbUserData) {
         res.status(404).json({ message: 'No user found with this id' });
         return;
       }
