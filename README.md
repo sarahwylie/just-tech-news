@@ -11,7 +11,7 @@ Do you like tech a lot? Are you all about keeping up with sites like [Hacker New
 * [Queries](#any-questions)
 
 ## Usage
-Social media site for technie nerds.
+Social media site for technie nerds. For an even cooler experience, check out the Java version of this site at [Just Tech News](https://just-tech-news-java-1.herokuapp.com/)!
 
 ## Installation
 Pop open [Just Tech News](https://lit-shelf-14349.herokuapp.com/) and set up an account. Then add sites, vote on others' suggestions, and comment away! 
